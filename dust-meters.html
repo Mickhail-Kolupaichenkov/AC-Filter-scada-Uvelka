@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC|Фильтр Увелка</title>
+    <link rel="stylesheet" href="resset.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="dust-meters.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="headerTop">
+            <div class="headerLogo">📊 AC|Фильтр Увелка</div>
+            <div class="headerSearch">
+                <input type="text" placeholder="Введите ваш запрос..">
+                <button>🔍</button>
+            </div>
+        </div>
+        <nav class="headerMenu">
+            <ul>
+                <li id="ac-sistem">📄 Аспирационные сети</a></li>
+                <li id="blocks-sistem">📈 Блоки встряхивания</li>
+                <li id="dust-meters" class="menuActive">📉 Пылимеры</li>
+                <li id="passports">📰 Паспорта сетей</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+<div class="content">
+    <div class="page-header">
+        <h1>Пылемеры</h1>
+        <br>
+    </div>
+    <div class="table-container">
+        <table class="dustmeters-table">
+            <thead>
+                <tr>
+                    <th rowspan="2">Фильтр</th>
+                    <th rowspan="2">№</th>
+                    <th rowspan="2">Статус</th>
+                    <th colspan="2">Показания</th>
+                    <th rowspan="2">Модель пылимера</th>
+                    <th rowspan="2">Примечание</th>
+                </tr>
+                <tr>
+                    <th>Текущие</th>
+                    <th>Максимальные</th>
+                </tr>
+            </thead>
+            <tbody id="dustmetersTableBody">
+            
+            </tbody>
+        </table>
+    </div>
+</div>
+    </main>
+    <footer class="footer">
+        <div class="dateBlock"></div>
+        <div class="errors">© 2025 ООО "Ресурс Увелка"</div>
+    </footer>
+
+
+<script type="module" src="index.js"></script>
+<script src="clock.js"></script>
+<script type="module" src="dust-meters.js"></script>
+<script src="search.js"></script>
+</div>
+</body>
+</html>

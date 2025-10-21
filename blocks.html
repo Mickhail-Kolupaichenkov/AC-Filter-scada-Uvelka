@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC|Фильтр Увелка</title>
+    <link rel="stylesheet" href="resset.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="blocks.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="headerTop">
+            <div class="headerLogo">📊 AC|Фильтр Увелка</div>
+            <div class="headerSearch">
+                <input type="text" placeholder="Введите ваш запрос..">
+                <button>🔍</button>
+            </div>
+        </div>
+        <nav class="headerMenu">
+            <ul>
+                <li id="ac-sistem">📄 Аспирационные сети</a></li>
+                <li id="blocks-sistem" class="menuActive">📈 Блоки встряхивания</li>
+                <li id="dust-meters">📉 Пылимеры</li>
+                <li id="passports">📰 Паспорта сетей</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <div class="content">
+    <div class="page-header">
+        <h1>Блоки встряхивания</h1>
+        
+    </div>
+    <div class="table-container">
+        <table class="shaking-table">
+            <thead>
+                <tr>
+                    <th rowspan="2">№ п/п</th>
+                    <th rowspan="2">№ АС</th>
+                    <th colspan="2">Оборудование</th>
+                    <th rowspan="2">Цех</th>
+                    <th rowspan="2">Этаж</th>
+                    <th colspan="2">Период между встряхиваниями</th>
+                    <th colspan="2">Время импульса</th>
+                    <th rowspan="2">Линия</th>
+                    <th rowspan="2">Примечание</th>
+                </tr>
+                <tr>
+                    <th>Фильтр</th>
+                    <th>Вентилятор</th>
+                    <th>Начальные параметры</th>
+                    <th>Корректировка</th>
+                    <th>Начальные параметры</th>
+                    <th>Корректировка</th>
+                </tr>
+            </thead>
+            <tbody id="shakingTableBody">
+                
+            </tbody>
+        </table>
+    </div>
+</div>
+    </main>
+    <footer class="footer">
+        <div class="dateBlock"></div>
+        <div class="errors">© 2025 ООО "Ресурс Увелка"</div>
+    </footer>
+
+<script type="module" src="index.js"></script>
+<script src="clock.js"></script>
+<script type="module" src="blocks.js"></script>
+<script src="search.js"></script>
+</div>
+</body>
+</html>

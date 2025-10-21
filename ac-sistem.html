@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC|Фильтр Увелка</title>
+    <link rel="stylesheet" href="resset.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="ac-sistem.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="headerTop">
+            <div class="headerLogo">📊 AC|Фильтр Увелка</div>
+            <div class="headerSearch">
+                <input type="text" placeholder="Введите ваш запрос..">
+                <button>🔍</button>
+            </div>
+        </div>
+        <nav class="headerMenu">
+            <ul>
+                <li id="ac-sistem" class="menuActive">📄 Аспирационные сети</a></li>
+                <li id="blocks-sistem">📈 Блоки встряхивания</li>
+                <li id="dust-meters">📉 Пылимеры</li>
+                <li id="passports">📰 Паспорта сетей</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+<div class="content">
+    <div class="page-header">
+    <h1>Аспирационные сети</h1>
+    <div class="filters">
+        <select class="filter-select" id="floorFilter">
+            <option value="all">Все этажи</option>
+            <option value="5">5 этаж</option>
+            <option value="4">4 этаж</option>
+            <option value="3">3 этаж</option>
+            <option value="2">2 этаж</option>
+            <option value="1">1 этаж</option>
+            <option value="Надсилосный">Надсилосный</option>
+            <option value="Подсилосный">Подсилосный</option>
+        </select>
+        <select class="filter-select" id="lineFilter">
+            <option value="all">Все линии</option>
+            <option value="ТЛ 1">ТЛ 1</option>
+            <option value="ТЛ 2">ТЛ 2</option>
+            <option value="ТЛ 3">ТЛ 3</option>
+            <option value="Линия Schule">Линия Schule</option>
+            <option value="Перекачка в силоса">Перекачка в силоса</option>
+        </select>
+    </div>
+</div>
+
+    <div class="cards-grid">
+        <div class="network-card">
+            <div class="card-header">
+                <h3>АС №1</h3>
+                <span class="network-status status-active">Активна</span>
+            </div>
+            <div class="card-content">
+                <div class="info-row">
+                    <span class="label">ИЗАВ:</span>
+                    <span class="value">1</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Фильтр:</span>
+                    <span class="value">РЦИЭ-31,2-48 №407</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Вентилятор:</span>
+                    <span class="value">ВЦ 5-50-8 В1-01 №563</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Линия:</span>
+                    <span class="value">ТЛ 1</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Этаж:</span>
+                    <span class="value">4 этаж</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Конструкция:</span>
+                    <span class="value">С конусом</span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button class="btn-details">Подробнее</button>
+                <button class="btn-passport">Паспорт</button>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer class="footer">
+        <div class="dateBlock"></div>
+        <div class="errors">© 2025 ООО "Ресурс Увелка"</div>
+    </footer>
+
+    <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Подробная информация</h2>
+            <button class="modal-close">&times;</button>
+        </div>
+        <div class="modal-body" id="modalBody">
+            
+        </div>
+    </div>
+    </div>
+
+<script type="module" src="index.js"></script>
+<script src="clock.js"></script>
+<script type="module" src="ac-sistem.js"></script>
+<script src="search.js"></script>
+</div>
+</body>
+</html>
